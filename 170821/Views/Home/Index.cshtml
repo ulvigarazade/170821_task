@@ -1,0 +1,25 @@
+﻿
+@model HomeViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+<h2>Student List:</h2>
+<ul>
+    @foreach (Student student in Model.Students)
+    {
+        <li>@student.Id @student.Name @student.Surname</li>
+    }
+
+</ul>
+
+
+<h2>Number List:</h2>
+<ul>
+    @foreach (int num in Model.Numbers)
+    {
+        <li>@num </li>
+    }
+
+</ul>
+
+
